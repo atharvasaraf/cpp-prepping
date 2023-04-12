@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  cpp-container:
+    container_name: cpp-running
+    volumes:
+      - /Users/atharva/Documents/git/cpp-prepping:/git/cpp-prepping
+    command: tail -f /dev/null
+    build:
+      dockerfile: ./Dockerfile
